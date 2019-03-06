@@ -1,0 +1,17 @@
+Java schript assignment of 29th Feb 2019
+
+     Diffrence between Null and Undifined 
+
+Undefined means that a variable has been declared but has the value of tha variable hasnot yet been defined.
+
+                 var test1;
+                 cosole.log(test2)
+                     // undefined
+
+Null means an empty or non-existent value. Null is assigned, and explicitly means nothing.
+
+                 var test =null;
+                 console.log(test1)
+                        //null   
+
+      
