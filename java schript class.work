@@ -1,0 +1,77 @@
+newtab?rlz=1C1CHBF_enKE835KE835&ie=UTF-8:8 SW registered
+confirm("Are you sure?");
+true
+prompt("What is your name?");
+"carol"
+var name = prompt("What is your name");
+undefined
+
+console.log(name);
+VM842:2 Carolyne
+undefined
+alert(name);
+undefined
+var response =confirm("Are you sure?");
+var response =confirm("Are you sure?");
+undefined
+undefined
+var response =confirm("Are you sure?");
+undefined
+
+console.log(confirm)
+VM940:2 ƒ confirm() { [native code] }
+undefined
+console.log(response)
+VM990:1 true
+undefined
+var i =0;
+undefined
+i +=1;
+1
+i *=1;
+1
+i -=1;
+0
+i /=0;
+NaN
+var i=0;
+undefined
+i++;
+0
+i++;
+1
+i++;
+2
+i--;
+3
+i--;
+
+2
+i--;
+1
+var hungry = true;
+undefined
+hungry? prompt ("eat") : console.log("sleep");
+""
+hungry ? prompt("eat") : console.log("sleep");
+"yes"
+hungry ? prompt("eat") : console.log("sleep");
+"yes"
+hungry
+hungry
+hungry
+true
+true
+true
+obj = {"carol",sleep: true}
+VM1339:1 Uncaught SyntaxError: Unexpected token ,
+obj = {name: "carol",sleep: true}
+{name: "carol", sleep: true}
+if ("name" in obj) {cnsole.log(true)}
+VM1459:1 Uncaught ReferenceError: cnsole is not defined
+    at <anonymous>:1:21
+(anonymous) @ VM1459:1
+if ("name" in obj) {cnsole.log(true) }
+VM1467:1 Uncaught ReferenceError: cnsole is not defined
+    at <anonymous>:1:21
+(anonymous) @ VM1467:1
