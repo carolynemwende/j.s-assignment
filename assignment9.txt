@@ -1,0 +1,27 @@
+ECMA6 DOM ASSIGNMENT=>SOLUTION
+-----------------------------------------
+
+var body=document.body
+body.style.backgroundColor="silver"
+
+
+var h1=document.getElementById("title")
+h1.style.color="green"
+
+
+var carol = document.getElementById("carol");
+carol.innerHTML =carol.innerHTML.toUpperCase();
+var caro = document.getElementById("caro");
+caro.innerHTML =caro.innerHTML.toUpperCase();
+
+
+var fruit= document.createElement("li")
+fruit.innerHTML="Orange"
+var ul = document.getElementById("fruList")
+ul.appendChild(fruit)
+
+
+var vegetable= document.createElement("li")
+vegetable.innerHTML="cabbages"
+var ul = document.getElementById("vegList")
+ul.appendChild(vegetable)
