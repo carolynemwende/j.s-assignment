@@ -1,0 +1,27 @@
+               ASYNC AND AWAIT
+	----------------------------
+
+Async is a modification that makes writting of promises much easier.Await is used with async for they work better together.
+Furthermore it can only work with the presence of async, otherwise it wont be effective. Await ensures that all promises are sychronized,
+ie, all the events are executed without jumping any irrispective of the time it has to take to finish.
+
+ example
+--------
+
+function carol() {
+  return new Promise(call => {
+    setTimeout(() => {
+      call("mwende");
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log("calling");
+  var sound = await carol();
+  console.log(sound);
+ 
+}
+
+asyncCall();
+
