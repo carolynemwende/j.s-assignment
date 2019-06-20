@@ -1,0 +1,128 @@
+            ECMA6 assignment 12
+---------   __________________     ---------------
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Greens Kiosk</title>
+</head>
+<body>
+  
+  <h1 id="title">Welcome to Greens Kiosk</h1>
+  
+  <p>We sell fruits and vegetables</p>
+
+<input id="add" type="text" size="20"/>
+ 
+<button class="veg" id="btnAdd" value="Add" onclick="addveg()" >Vegetables</button>
+ 
+<div class="vegList">
+  
+  <ul id=click>
+      <li>Onions</li>
+      <li>Tomatoes</li>
+      <li>Kales</li>
+    </ul>
+
+</div>
+  
+  
+  <input id="addfruit" type="text" size="20"/>
+ <button class="frut" id="btnAddfrt" value="Addfruit" onclick="addFruit()" >Fruits</button> 
+  
+  <div class="frtList">
+  
+  <ul id=frlst>
+      <li>mangoes</li>
+      <li>bananas</li>
+      <li>melons</li>
+    </ul>
+
+</div>
+  
+  
+  
+  
+ 
+  
+<div>
+       
+  
+
+</body>
+</html>
+
+
+___________________________________________________________________________________________________
+
+          JS SOLUTION
+          ------------
+
+
+
+var colorChange =()=>{
+  var title = document.getElementById("title");
+  title.style.color= title.style.color=="green"? "silver":"green"
+
+};
+setInterval(colorChange,1000);
+
+
+var veglist = document.getElementsByClassName("veg");
+var i;
+
+for (i = 0; i < veglist.length; i++) {
+  veglist[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var vegList = this.nextElementSibling;
+    if (vegList.style.display === "block") {
+      vegList.style.display = "none";
+    } else {
+      vegList.style.display = "block";
+    }
+  });
+}
+
+
+function addveg(){
+        var li = document.createElement("LI");  
+        var input = document.getElementById("add");
+        li.innerHTML = input.value;
+        input.value = "";
+
+        document.getElementById("click").appendChild(li);
+
+}
+
+
+
+var frutlist = document.getElementsByClassName("frut");
+var i;
+
+for (i = 0; i < frutlist.length; i++) {
+  frutlist[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var fruitList = this.nextElementSibling;
+    if (fruitList.style.display === "block") {
+      fruitList.style.display = "none";
+    } else {
+      fruitList.style.display = "block";
+    }
+  });
+}
+
+
+
+
+function addFruit(){
+        var li = document.createElement("LI");  
+        var input = document.getElementById("addfruit");
+        li.innerHTML = input.value;
+        input.value = "";
+
+        document.getElementById("frlst").appendChild(li);
+
+}
+
+
+
+
